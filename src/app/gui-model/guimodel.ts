@@ -339,34 +339,20 @@ export class GuiModel {
                             "type": "backbutton",
                             "color": "blue",
                         },
-                
                         {
                             "type": "newButton",
                             "name": "AddActivity",
                             "icon": "fa-home",
-                            "color": "red",
-                            "width": 2,
+                            "color": "green sea",
+                            "width": 1,
                             "url": "/activity",
                             "form": {
                                 "form": "AddActivityForm",
                                 "url" : "activity",
                             }
                         },
-                        
-                     {   
-                        "type": "list",
-                            "name":"EditFriend",
-                            "icon": "fa-user",
-                            "color": "blue",
-                            //"search": true,
-                            "url": "/friend/:friendKey/activity",
-                            "form": {
-                                "form": "AddFriendForm"
-                            }
-                        },
                         {
                             "type": "button",
-                           
                             "name": "EditFriend",
                             "icon": "fa-user",
                             "color": "green",
@@ -378,14 +364,20 @@ export class GuiModel {
                                 
                             }
                         },
-                      
-                               
-                            
-                       
-
-                        
+                        {   
+                        "type": "list",
+                            "name":"EditFriend",
+                            "icon": "fa-user",
+                            "color": "blue",
+                            //"search": true,
+                            "url": "/friend/:friendKey/activity",
+                            "form": {
+                                "form": "ActivityForm"
+                            }
+                        },
                          ]  
                 },
+
                 {   
                     "id": "groupspage",
                     "elementList": [
@@ -459,32 +451,6 @@ export class GuiModel {
                             "type": "backbutton",
                             "color": "blue",
                         },
-                
-                        /*{
-                            "type": "newButton",
-                            "name": "AddActivity",
-                            "icon": "fa-home",
-                            "color": "red",
-                            "width": 2,
-                            "url": "/activity",
-                            "form": {
-                                "form": "AddActivityForm",
-                                "url" : "activity",
-                            }
-                        },*/
-                        
-                     /*{   
-                        "type": "list",
-                            "name":"EditFriend",
-                            "icon": "fa-user",
-                            "color": "blue",
-                            //"search": true,
-                            "url": "/friend/:friendKey/",
-                            "form": {
-                                "form": "AddFriendForm"
-                            }
-                        },*/
-                     
                         {
                             //Weiterleiten von Freundesseite auf Aktivitätenübersicht + Edit Friend
                             "type": "list",
@@ -493,7 +459,7 @@ export class GuiModel {
                             "search": true,
                             "url": "/activity/:activityKey/friend",
                            "form": {
-                                "form": "AddActivityForm"
+                                "form": "FriendForm"
                                 
                             }
                                
